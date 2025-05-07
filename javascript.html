@@ -5,10 +5,20 @@
         <link rel="stylesheet" type="text/css" href="">
         <script src="jquery.js"></script>
         <script>
-            
+           
+           function verificar(){
+                let nome = getElementById("nome");
+                let idade = getElementById("idade");
+                alert(nome);
+                alert(idade);
+           }
+
         </script>
     </head>
     <body>
-
+        <input type="text" id="nome">
+        <input type="text" id="idade">
+        </br>
+        <button onclick="verificar()">Verificar</button>
     </body>
 </html>
