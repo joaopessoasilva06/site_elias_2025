@@ -5,20 +5,24 @@
         <link rel="stylesheet" type="text/css" href="">
         <script src="jquery.js"></script>
         <script>
-           
+            let nome = document.getElementById("nome").value;
+            let idade = document.getElementById("idade").value;
+
            function verificar(){
-                let nome = getElementById("nome");
-                let idade = getElementById("idade");
                 alert(nome);
                 alert(idade);
            }
-
+           btn_verificar.onclick = function(){
+                alert(nome);
+                alert(idade);
+           }
         </script>
     </head>
     <body>
+        <p>Verificar se eleitor pode votar</p>
         <input type="text" id="nome">
         <input type="text" id="idade">
         </br>
-        <button onclick="verificar()">Verificar</button>
+        <button onclick="verificar();" id="btn_verificar">Verificar</button>
     </body>
 </html>
